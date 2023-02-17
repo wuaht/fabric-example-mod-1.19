@@ -7,6 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.wuaht.testmod.TestMod;
+import net.wuaht.testmod.item.custom.EightBallItem;
 
 public class ModItems {
 
@@ -16,6 +17,10 @@ public class ModItems {
 
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new Item.Settings()),
+            ModItemGroup.TANZANITE);
+
+    public static final Item EIGHT_BALL = registerItem("eight_ball",
+            new EightBallItem(new Item.Settings().maxCount(1)),
             ModItemGroup.TANZANITE);
 
 
