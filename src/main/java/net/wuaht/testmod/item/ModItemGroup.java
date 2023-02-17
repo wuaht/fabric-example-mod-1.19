@@ -9,9 +9,9 @@ import net.wuaht.testmod.TestMod;
 
 public class ModItemGroup {
 
-    public static final ItemGroup TANZANITE = FabricItemGroup.builder(new Identifier(TestMod.MOD_ID))
-            .displayName(Text.literal("Tanzanite"))
-            .icon(() -> new ItemStack(ModItems.TANZANITE))
+    public static final ItemGroup WUAHT = FabricItemGroup.builder(new Identifier(TestMod.MOD_ID))
+            .displayName(Text.literal("wuaht"))
+            .icon(() -> new ItemStack(ModItems.EIGHT_BALL))
             .build();
 
 }

@@ -13,15 +13,15 @@ public class ModItems {
 
     public static final Item RAW_TANZANITE = registerItem("raw_tanzanite",
             new Item(new Item.Settings()),
-            ModItemGroup.TANZANITE);
+            ModItemGroup.WUAHT);
 
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new Item.Settings()),
-            ModItemGroup.TANZANITE);
+            ModItemGroup.WUAHT);
 
     public static final Item EIGHT_BALL = registerItem("eight_ball",
             new EightBallItem(new Item.Settings().maxCount(1)),
-            ModItemGroup.TANZANITE);
+            ModItemGroup.WUAHT);
 
 
     private static Item registerItem(String name, Item item, ItemGroup group) {
