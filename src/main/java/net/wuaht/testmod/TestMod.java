@@ -3,6 +3,7 @@ package net.wuaht.testmod;
 import net.fabricmc.api.ModInitializer;
 import net.wuaht.testmod.block.ModBlocks;
 import net.wuaht.testmod.item.ModItems;
+import net.wuaht.testmod.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +17,8 @@ public class TestMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModVillagers.registerVillagers();
+		ModVillagers.registerTrades();
 
 	}
 }
