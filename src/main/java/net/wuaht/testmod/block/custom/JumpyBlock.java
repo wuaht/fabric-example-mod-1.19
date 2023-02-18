@@ -16,13 +16,6 @@ import net.minecraft.world.World;
 
 public class JumpyBlock extends Block {
 
-    @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-
-        player.sendMessage(Text.literal("This block has been right-clicked."));
-
-        return super.onUse(state, world, pos, player, hand, hit);
-    }
 
     @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {

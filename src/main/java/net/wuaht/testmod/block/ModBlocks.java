@@ -15,11 +15,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.wuaht.testmod.TestMod;
 import net.wuaht.testmod.block.custom.JumpyBlock;
+import net.wuaht.testmod.block.custom.TanzaniteLampBlock;
 import net.wuaht.testmod.item.ModItemGroup;
 
 public class ModBlocks {
 
-    // Modded Blocks
+    // Register Modded Blocks
     public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.WUAHT);
     public static final Block TANZANITE_ORE = registerBlock("tanzanite_ore",
@@ -32,6 +33,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(), UniformIntProvider.create(3, 7)), ModItemGroup.WUAHT);
     public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
             new JumpyBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.WUAHT);
+    public static final Block TANZANITE_LAMP = registerBlock("tanzanite_lamp",
+            new TanzaniteLampBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()
+                    .luminance(state -> state.get(TanzaniteLampBlock.LIT) ? 15 : 0)), ModItemGroup.WUAHT);
 
 
 
